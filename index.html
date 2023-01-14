@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather App</title>
+  </head>
+  <body class="blurred">
+    <div class="body">
+      <header class="header">
+        <div class="top-header">
+          <img src="icons/sun.svg" class="weather-icon large" data-current-icon>
+          <div class="header-current-temp"><span data-current-temp>31</span>&deg;</div>
+        </div>
+        <div class="bottom-header">
+          <div class="info-group">
+            <div class="label">high</div>
+            <div><span data-current-high>32</span>&deg;</div>
+          </div>
+          <div class="info-group">
+            <div class="label">fl high</div>
+            <div><span data-current-fl-high>32</span>&deg;</div>
+          </div>
+          <div class="info-group">
+            <div class="label">wind</div>
+            <div>
+              <span data-current-wind>9</span><span class="value-sub-info">kmh</span>
+            </div>
+          </div>
+          <div class="info-group">
+            <div class="label">low</div>
+            <div><span data-current-low>32</span>&deg;</div>
+          </div>
+          <div class="info-group">
+            <div class="label">fl low</div>
+            <div><span data-current-fl-low>32</span>&deg;</div>
+          </div>
+          <div class="info-group">
+            <div class="label">precip</div>
+            <div>
+              <span data-current-precip>0.1</span><span class="value-sub-info">in</span>
+            </div>
+          </div>
+        </div>
+      </header>
+
+      <section class="daily-forecasts" data-day-section>
+        <div class="forecast">
+          <img src="icons/cloud-sun.svg" class="weather-icon">
+          <div class="forecast-info">
+            <div><span data-daily-date>04/01/2023</span></div>
+            <div><span data-daily-temp>24</span>&deg;</div>
+          </div>
+        </div>
+        <div class="forecast">
+          <img src="icons/cloud-sun.svg" class="weather-icon">
+          <div class="forecast-info">
+            <div><span data-daily-date>04/01/2023</span></div>
+            <div><span data-daily-temp>24</span>&deg;</div>
+          </div>
+        </div>
+        <div class="forecast">
+          <img src="icons/cloud-sun.svg" class="weather-icon">
+          <div class="forecast-info">
+            <div><span data-daily-date>04/01/2023</span></div>
+            <div><span data-daily-temp>24</span>&deg;</div>
+          </div>
+        </div>
+        <div class="forecast">
+          <img src="icons/cloud-sun.svg" class="weather-icon">
+          <div class="forecast-info">
+            <div><span data-daily-date>04/01/2023</span></div>
+            <div><span data-daily-temp>24</span>&deg;</div>
+          </div>
+        </div>
+        <div class="forecast">
+          <img src="icons/cloud-sun.svg" class="weather-icon">
+          <div class="forecast-info">
+            <div><span data-daily-date>04/01/2023</span></div>
+            <div><span data-daily-temp>24</span>&deg;</div>
+          </div>
+        </div>
+        <div class="forecast">
+          <img src="icons/cloud-sun.svg" class="weather-icon">
+          <div class="forecast-info">
+            <div><span data-daily-date>04/01/2023</span></div>
+            <div><span data-daily-temp>24</span>&deg;</div>
+          </div>
+        </div>
+        <div class="forecast">
+          <img src="icons/cloud-sun.svg" class="weather-icon">
+          <div class="forecast-info">
+            <div><span data-daily-date>04/01/2023</span></div>
+            <div><span data-daily-temp>24</span>&deg;</div>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <template id="day-card-template">
+      <div class="forecast">
+        <img src="icons/cloud-sun.svg" class="weather-icon" data-icon>
+        <div class="forecast-info">
+          <div><span data-daily-date>04/01/2023</span></div>
+          <div><span data-daily-temp>24</span><span>&deg;</span></div>
+        </div>
+      </div>
+    </template>
+
+    <script type="module" src="/src/main.ts" defer></script>
+  </body>
+</html>
